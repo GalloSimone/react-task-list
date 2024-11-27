@@ -20,6 +20,35 @@ function App() {
     <>
       <h1>Task Manager</h1>
       <div className='container'>
+        <h3>Current task ({currentTaskNum})</h3>
+
+
+
+        {currentTask.map((task, index) => {
+          return (
+            <ul key={index}>
+              <li>{task.title}</li>
+              <li>priority: {task.priority}</li>
+              <li>Est. time: {task.estimatedTime}</li>
+
+            </ul>
+          );
+        })}
+        <hr />
+        <h3>Completed Task ({completedTaskNum})</h3>
+
+        {completedTask.map((task, index) => {
+          return (
+            <ul key={index}>
+              <li>{task.title}</li>
+              <li>priority:{task.priority}</li>
+              <li>Est. time: {task.estimatedTime}</li>
+              <li>state: {task.state}</li>
+            </ul>
+          )
+
+
+        })}
 
 
       </div>
