@@ -30,3 +30,12 @@ ul li:first-child {
 .container {
   margin: 2rem;
 }
+
+.state {
+  background-color: orange;
+  color: white;
+}
+
+.Complete {
+  background-color: green;
+}

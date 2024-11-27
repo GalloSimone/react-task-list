@@ -30,6 +30,7 @@ function App() {
               <li>{task.title}</li>
               <li>priority: {task.priority}</li>
               <li>Est. time: {task.estimatedTime}</li>
+              <li className='state'>state: {task.state}</li>
 
             </ul>
           );
@@ -43,7 +44,7 @@ function App() {
               <li>{task.title}</li>
               <li>priority:{task.priority}</li>
               <li>Est. time: {task.estimatedTime}</li>
-              <li>state: {task.state}</li>
+              <li className='Complete'>state:{task.state}</li>
             </ul>
           )
 
